@@ -6,12 +6,12 @@
   Bullet(){
      x = mouseX+25;
      y = height-47;
-     r = 3;
+     r = 5;
   }
   
   void moveBullet(){
     if(bulletActive){
-      y-=5;
+      y-=10;
       
       if(y < 0){
         bulletActive = false;
