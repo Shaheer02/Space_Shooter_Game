@@ -1,4 +1,4 @@
-
+float y=height-50;
 
 Star [] star = new Star[300];
 
@@ -22,5 +22,5 @@ void draw(){
     
   }
   rocket.display();
-  
+
 }
