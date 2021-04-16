@@ -5,7 +5,7 @@ float r,x,y,speedY;
 public Star(){
   this.r=random(1,3);
 this.x=random(0,width);
-this.y=random(0,height);
+this.y=random(0,height); // Display the stars on the screen
 this.speedY=1;
 
 }
@@ -16,7 +16,7 @@ void move(){
   if(y-r>=height){
      this.r=random(1,3);
 this.x= random(0,width);
-this.y= random(0,-height);
+this.y= random(0,-height); // Then display stars outside the screen
 this.speedY=1;
     
   }

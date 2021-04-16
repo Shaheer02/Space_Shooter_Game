@@ -11,7 +11,7 @@
   
   void moveBullet(){
     if(bulletActive){
-      y-=10;
+      y-=15;
       
       if(y < 0){
         bulletActive = false;
