@@ -11,6 +11,11 @@ public void display(){
     
   }
   rocket.display();
+enemy.display();
+  enemy.move();
+  
+  if(rocket.bullet.r + rocket.bullet.y <= enemy.yPos+50 && ( rocket.bullet.x >= enemy.xPos && rocket.bullet.x <= enemy.xPos + 50) )
+ enemy.hit();
 
 textSize(16);
 fill(250,180);
