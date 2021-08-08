@@ -5,6 +5,7 @@ Rocket rocket;
 Enemy enemy;
 Scene1 s1 = new Scene1();
 Scene2 s2 = new Scene2();
+Scene3 s3 = new Scene3();
 int run = 1;
 
 void setup(){
@@ -24,22 +25,32 @@ enemy = new Enemy();
 void draw(){
   if(run == 1){
  s1.display();
+ s2.reset();
  
- if(keyPressed && key == 'p'){
+ if(keyPressed && key == 'p')
    run = 2;
- }
- if(keyPressed && key == 'e'){
+ 
+ if(keyPressed && key == 'e')
    exit();
- }
+ 
  
 }
+
+
 else if(run == 2){
   s2.display();
 
-if(keyPressed && key == 'h'){
+if(keyPressed && key == 'h')
   run = 1;
-}
+
 }
 
 
+else if(run == 3){
+  s3.display();
+  if(keyPressed && key == 'h')
+run = 1;
+
+}
+    
 }

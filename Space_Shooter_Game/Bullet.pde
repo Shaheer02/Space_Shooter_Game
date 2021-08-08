@@ -52,5 +52,10 @@ void detectCollisions(){
 
 }
 
+public void reset(){
+   x = mouseX+25;
+     y = height-47;
+}
+
 
 }

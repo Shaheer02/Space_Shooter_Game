@@ -2,7 +2,7 @@ class Enemy{
  PImage alien;
  float xPos;
 float yPos;
-int incr = 3;
+float incrY = 3;
   
   public Enemy(){
    alien = loadImage("Alien.png");
@@ -16,18 +16,24 @@ int incr = 3;
   }
   
   public void move(){
-    yPos+=incr;
+    yPos+=incrY;
+    
   }
   
   
  public void hit(){
-   
-     yPos = -50;
-     xPos = random(0,width-50);
-     incr += 1;
-   
+   reset(false);
+     incrY += 1;
  }
  
+ 
+ public void reset(boolean resetIncrY){
+    yPos = -50;
+     xPos = random(0,width-50);
+     
+     if(resetIncrY)
+     incrY = 3;
+ }
  
  
  
