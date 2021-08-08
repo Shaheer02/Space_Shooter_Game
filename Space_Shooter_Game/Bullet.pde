@@ -1,4 +1,4 @@
-  class Bullet {
+class Bullet {
  boolean bulletActive = false;
  
   float x,y,r;
@@ -39,7 +39,7 @@ isBulletActive();
 
 
 void isBulletActive(){
-if(mousePressed)
+if(mousePressed || (keyPressed && key == ' '))
 bulletActive=true;
 
 

@@ -16,7 +16,7 @@ void move(){
   if(y-r>=height){
      this.r=random(1,3);
 this.x= random(0,width);
-this.y= random(0,-height); // Then display stars outside the screen
+this.y= random(0,-height); // Then display stars outside the screen, which will then move toward the bottom
 this.speedY=1;
     
   }
