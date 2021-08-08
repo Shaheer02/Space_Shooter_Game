@@ -1,7 +1,7 @@
 class Bullet {
  boolean bulletActive = false;
- 
   float x,y,r;
+
   
   Bullet(){
      x = mouseX+25;
@@ -39,10 +39,12 @@ isBulletActive();
 
 
 void isBulletActive(){
-if(mousePressed || (keyPressed && key == ' '))
+  
+  if(mousePressed || (keyPressed && key == ' ')){
 bulletActive=true;
 
-
+  }
+  
   }
 
 void detectCollisions(){
@@ -55,7 +57,13 @@ void detectCollisions(){
 public void reset(){
    x = mouseX+25;
      y = height-47;
+     bulletActive = false;
+    
 }
+
+
+
+
 
 
 }
