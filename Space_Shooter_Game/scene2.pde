@@ -14,15 +14,20 @@ public void display(){
 enemy.display();
   enemy.move();
   
+
   if(rocket.bullet.r + rocket.bullet.y <= enemy.yPos+50 && ( rocket.bullet.x >= enemy.xPos && rocket.bullet.x <= enemy.xPos + 50) && rocket.bullet.y != height-47){
  enemy.hit();
   rocket.bullet.reset();
   rocket.bullet.bulletActive = false;
   count+=1;
 }
+
+ 
  if(enemy.yPos + 50 >= height){
    run = 3;
  }
+ 
+
 
 textSize(16);
 fill(250,180);
@@ -37,5 +42,7 @@ public void reset(){
   count = 0;
   
 }
+
+
 
 }

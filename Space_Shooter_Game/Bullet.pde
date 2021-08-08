@@ -14,12 +14,13 @@ class Bullet {
       y-=15;
       
       if(y < 0){
-        bulletActive = false;
+      
+         bulletActive = false;
  
     }
      
     }
-  else { x = mouseX+25; y = height-47; }
+ else { x = mouseX+25; y = height-47; }
 
 }
 
@@ -55,9 +56,10 @@ void detectCollisions(){
 }
 
 public void reset(){
-   x = mouseX+25;
-     y = height-47;
-     bulletActive = false;
+  bulletActive = false;
+  x = mouseX+25;
+  y = height-47;
+ 
     
 }
 
