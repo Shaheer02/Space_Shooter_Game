@@ -15,7 +15,6 @@ class Bullet {
       
       if(y < 0)
          bulletActive = false;
- 
      
     }
  else { x = mouseX+25; y = height-47; }
@@ -39,15 +38,14 @@ isBulletActive();
 
 void isBulletActive(){
   
-  if(mousePressed || (keyPressed && key == ' ')){
+  if(mousePressed || (keyPressed && key == ' '))
 bulletActive=true;
 
-  }
-  
   }
 
 
 public void reset(){
+ 
   bulletActive = false;
   x = mouseX+25;
   y = height-47;

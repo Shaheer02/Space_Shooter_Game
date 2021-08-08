@@ -15,7 +15,7 @@ enemy.display();
   enemy.move();
   
 
-  if(rocket.bullet.r + rocket.bullet.y <= enemy.yPos+50 && ( rocket.bullet.x >= enemy.xPos && rocket.bullet.x <= enemy.xPos + 50) && rocket.bullet.y != height-47){
+  if(rocket.bullet.r + rocket.bullet.y <= enemy.yPos+50 && ( rocket.bullet.x >= enemy.xPos && rocket.bullet.x <= enemy.xPos + 50) && rocket.bullet.bulletActive){
  enemy.hit();
   rocket.bullet.reset();
   rocket.bullet.bulletActive = false;

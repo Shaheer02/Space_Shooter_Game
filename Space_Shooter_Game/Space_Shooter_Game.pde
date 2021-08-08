@@ -29,10 +29,10 @@ void draw(){
  s1.display();
  s2.reset();
  
- if(keyPressed && key == 'p')
+ if(keyPressed && (key == 'p' || key =='P'))
    run = 2;
  
- if(keyPressed && key == 'e')
+ if(keyPressed && (key == 'e' || key =='E'))
    exit();
  
  
@@ -42,7 +42,7 @@ void draw(){
 else if(run == 2){
   s2.display();
 
-if(keyPressed && key == 'h')
+if(keyPressed && (key == 'h' || key =='H')   )
   run = 1;
 
 }
@@ -50,7 +50,7 @@ if(keyPressed && key == 'h')
 
 else if(run == 3){
   s3.display();
-  if(keyPressed && key == 'h')
+  if(keyPressed && (key == 'h' || key =='H'))
 run = 1;
 
 }
