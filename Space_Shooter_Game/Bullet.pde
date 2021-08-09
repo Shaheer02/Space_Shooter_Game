@@ -1,10 +1,10 @@
-class Bullet {
+ class Bullet {
  boolean bulletActive = false;
   float x,y,r;
 
   
   Bullet(){
-     x = mouseX+25;
+     x = mouseX;
      y = height-47;
      r = 5;
   }
@@ -17,7 +17,7 @@ class Bullet {
          bulletActive = false;
      
     }
- else { x = mouseX+25; y = height-47; }
+ else { x = mouseX; y = height-47; }
 
 }
 
@@ -47,7 +47,7 @@ bulletActive=true;
 public void reset(){
  
   bulletActive = false;
-  x = mouseX+25;
+  x = mouseX;
   y = height-47;
  
     

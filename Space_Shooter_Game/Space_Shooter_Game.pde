@@ -9,7 +9,7 @@ Scene3 s3;
 int run = 1;
 
 void setup(){
-  noCursor();
+ // noCursor();
   size(300,500);
   
 
