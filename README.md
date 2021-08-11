@@ -1,7 +1,7 @@
 # **Space_Shooter_Game**
 
 
-### How To Play
+## **How To Play**
 
 ### *How it Works*
 - An alien appearing at the top of the screen moves toward the bottom of the screen
