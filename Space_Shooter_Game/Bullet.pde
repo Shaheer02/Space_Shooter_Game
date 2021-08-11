@@ -46,9 +46,11 @@ bulletActive=true;
 
 public void reset(){
  
-  bulletActive = false;
+
   x = mouseX;
   y = height-47;
+  bulletActive = false;
+  mousePressed = false;
  
     
 }
