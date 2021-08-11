@@ -38,7 +38,7 @@ isBulletActive();
 
 void isBulletActive(){
   
-  if(mousePressed || (keyPressed && key == ' '))
+  if(mousePressed)
 bulletActive=true;
 
   }
@@ -51,6 +51,7 @@ public void reset(){
   y = height-47;
   bulletActive = false;
   mousePressed = false;
+
  
     
 }
