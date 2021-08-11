@@ -1,8 +1,6 @@
 # **Space_Shooter_Game**
 
 
-## **How To Play**
-
 ### *How it Works*
 - An alien appearing at the top of the screen moves toward the bottom of the screen
 - The objective is for the spaceship, which is at the bottom of the screen, to fire a bullet to kill the alien
