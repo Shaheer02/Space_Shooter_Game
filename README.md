@@ -13,6 +13,7 @@
 ### *Bullet System*
 - The spaceship may only fire one bullet
 - The spaceship can only fire a bullet once the bullet has either gone to the top of the screen out of view, or the bullet hits the alien.
+  - You must click again to fire the bullet
 
 
 
